@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://dti7ymbyqmodp"]
+
+[ext_resource type="Texture2D" uid="uid://br8jxcg12xafd" path="res://Assets/Background/Brown.png" id="1_nlnvu"]
+
+[node name="levels" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_top = -2.0
+offset_right = 1153.0
+offset_bottom = 646.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_nlnvu")
+stretch_mode = 1
