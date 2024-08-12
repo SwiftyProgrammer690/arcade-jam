@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bn6baq1n12vvu" path="res://Assets/flag-orpheus-left.png" id="2_dv7l4"]
 [ext_resource type="Texture2D" uid="uid://2tnsr31gd7c3" path="res://Assets/Group 2.png" id="3_6qsox"]
 [ext_resource type="Script" path="res://Scripts/ButtonMenu.gd" id="3_vslq8"]
-[ext_resource type="PackedScene" uid="uid://dti7ymbyqmodp" path="res://Scenes/levels.tscn" id="4_j6vkd"]
+[ext_resource type="PackedScene" uid="uid://c6se6sumwsxt8" path="res://Scenes/level_1.tscn" id="4_8bnjk"]
 
 [node name="Menu" type="Node2D"]
 
@@ -53,7 +53,7 @@ offset_right = 676.0
 offset_bottom = 505.0
 text = "Play Game"
 script = ExtResource("3_vslq8")
-scene = ExtResource("4_j6vkd")
+scene = ExtResource("4_8bnjk")
 
 [node name="TextureRect3" type="TextureRect" parent="."]
 offset_left = 288.0
