@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://b20157q0h1v61"]
+[gd_scene load_steps=6 format=3 uid="uid://b20157q0h1v61"]
 
 [ext_resource type="Texture2D" uid="uid://br8jxcg12xafd" path="res://Assets/Background/Brown.png" id="1_cdkhd"]
 [ext_resource type="Texture2D" uid="uid://bn6baq1n12vvu" path="res://Assets/flag-orpheus-left.png" id="2_dv7l4"]
+[ext_resource type="Texture2D" uid="uid://2tnsr31gd7c3" path="res://Assets/Group 2.png" id="3_6qsox"]
+[ext_resource type="Script" path="res://Scripts/ButtonMenu.gd" id="3_vslq8"]
+[ext_resource type="PackedScene" uid="uid://dti7ymbyqmodp" path="res://Scenes/levels.tscn" id="4_j6vkd"]
 
 [node name="Menu" type="Node2D"]
 
@@ -34,23 +37,30 @@ offset_right = 191.0
 offset_bottom = 68.0
 text = "For a Game Jam hosted by"
 
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+modulate = Color(0.44475, 0.28196, 0.119711, 1)
+offset_left = 490.0
+offset_top = 85.0
+offset_right = 664.0
+offset_bottom = 135.0
+theme_override_font_sizes/normal_font_size = 30
+text = "Just Your"
+
 [node name="Button" type="Button" parent="."]
-offset_left = 207.0
-offset_top = 417.0
-offset_right = 415.0
-offset_bottom = 468.0
-text = "Story Mode"
+offset_left = 468.0
+offset_top = 454.0
+offset_right = 676.0
+offset_bottom = 505.0
+text = "Play Game"
+script = ExtResource("3_vslq8")
+scene = ExtResource("4_j6vkd")
 
-[node name="Button2" type="Button" parent="."]
-offset_left = 465.0
-offset_top = 417.0
-offset_right = 673.0
-offset_bottom = 468.0
-text = "Levels"
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 288.0
+offset_top = 143.0
+offset_right = 825.0
+offset_bottom = 385.0
+texture = ExtResource("3_6qsox")
+expand_mode = 1
 
-[node name="Button3" type="Button" parent="."]
-offset_left = 729.0
-offset_top = 417.0
-offset_right = 937.0
-offset_bottom = 468.0
-text = "Credits"
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
