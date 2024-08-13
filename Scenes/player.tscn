@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://cx1n4sygt3yso"]
 
 [ext_resource type="Texture2D" uid="uid://dfrbfxwirb21d" path="res://Assets/idle.png" id="1_55p6k"]
-[ext_resource type="Script" path="res://Scenes/player.gd" id="1_knm8d"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_456su"]
 [ext_resource type="Texture2D" uid="uid://31im2bnlpvpq" path="res://Assets/jump.png" id="2_3da2y"]
 [ext_resource type="Texture2D" uid="uid://bajqg4m3xbh5x" path="res://Assets/walk.png" id="2_nk7pg"]
 
@@ -119,7 +119,7 @@ radius = 16.0
 height = 44.0
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_knm8d")
+script = ExtResource("1_456su")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

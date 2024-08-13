@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://b20157q0h1v61"]
+[gd_scene load_steps=7 format=3 uid="uid://b20157q0h1v61"]
 
 [ext_resource type="Texture2D" uid="uid://br8jxcg12xafd" path="res://Assets/Background/Brown.png" id="1_cdkhd"]
 [ext_resource type="Texture2D" uid="uid://bn6baq1n12vvu" path="res://Assets/flag-orpheus-left.png" id="2_dv7l4"]
 [ext_resource type="Texture2D" uid="uid://2tnsr31gd7c3" path="res://Assets/Group 2.png" id="3_6qsox"]
+[ext_resource type="Texture2D" uid="uid://cfkkpd1f7rb5w" path="res://Assets/orpheus-skateboarding-PCB.png" id="3_31gik"]
 [ext_resource type="Script" path="res://Scripts/ButtonMenu.gd" id="3_vslq8"]
 [ext_resource type="PackedScene" uid="uid://c6se6sumwsxt8" path="res://Scenes/level_1.tscn" id="4_8bnjk"]
 
@@ -28,6 +29,14 @@ offset_bottom = 140.0
 texture = ExtResource("2_dv7l4")
 expand_mode = 1
 stretch_mode = 6
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+offset_left = 285.0
+offset_top = 257.0
+offset_right = 445.0
+offset_bottom = 414.0
+texture = ExtResource("3_31gik")
+expand_mode = 1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 modulate = Color(0.258824, 0.258824, 0.258824, 1)
