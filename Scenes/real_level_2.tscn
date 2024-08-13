@@ -1,13 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://cmo4obhtpha5b"]
+[gd_scene load_steps=10 format=3 uid="uid://bciypelb0spub"]
 
-[ext_resource type="Texture2D" uid="uid://br8jxcg12xafd" path="res://Assets/Background/Brown.png" id="1_1bkut"]
-[ext_resource type="PackedScene" uid="uid://cx1n4sygt3yso" path="res://Scenes/player.tscn" id="2_8dg17"]
-[ext_resource type="Texture2D" uid="uid://c8iga6pa2tywm" path="res://Assets/Terrain (16x16).png" id="3_yxyoi"]
-[ext_resource type="PackedScene" uid="uid://c26aww846h4un" path="res://Scenes/checkpoint.tscn" id="4_q67r8"]
-[ext_resource type="PackedScene" uid="uid://bciypelb0spub" path="res://Scenes/real_level_2.tscn" id="5_8651y"]
+[ext_resource type="Texture2D" uid="uid://br8jxcg12xafd" path="res://Assets/Background/Brown.png" id="1_qagor"]
+[ext_resource type="PackedScene" uid="uid://cx1n4sygt3yso" path="res://Scenes/player.tscn" id="2_v3rpp"]
+[ext_resource type="Texture2D" uid="uid://c8iga6pa2tywm" path="res://Assets/Terrain (16x16).png" id="3_qqhem"]
+[ext_resource type="PackedScene" uid="uid://c26aww846h4un" path="res://Scenes/checkpoint.tscn" id="4_meem1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_548y7"]
-texture = ExtResource("3_yxyoi")
+texture = ExtResource("3_qqhem")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -473,7 +472,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_548y7")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aegkj"]
-texture = ExtResource("3_yxyoi")
+texture = ExtResource("3_qqhem")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -636,7 +635,7 @@ offset_right = 2749.0
 offset_bottom = 2866.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_1bkut")
+texture = ExtResource("1_qagor")
 stretch_mode = 1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
@@ -655,7 +654,7 @@ offset_right = 1786.0
 offset_bottom = 1791.0
 text = "Alright fine, i just wanted to waste your time... here is the real game..."
 
-[node name="Player" parent="." instance=ExtResource("2_8dg17")]
+[node name="Player" parent="." instance=ExtResource("2_v3rpp")]
 position = Vector2(339, 743)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -680,8 +679,7 @@ layer_0/tile_data = PackedInt32Array(983075, 983040, 1, 1048611, 983040, 1, 1114
 position = Vector2(1137, 2141)
 shape = SubResource("WorldBoundaryShape2D_3a05w")
 
-[node name="checkpoint" parent="." instance=ExtResource("4_q67r8")]
+[node name="checkpoint" parent="." instance=ExtResource("4_meem1")]
 position = Vector2(2051, 671)
-scene = ExtResource("5_8651y")
 
 [connection signal="body_entered" from="WorldBorder" to="Player" method="_on_world_border_body_entered"]
