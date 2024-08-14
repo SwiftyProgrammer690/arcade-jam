@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://nejkhguaiw3m"]
+[gd_scene load_steps=8 format=3 uid="uid://nejkhguaiw3m"]
 
+[ext_resource type="PackedScene" uid="uid://ykmvfaio0jyk" path="res://Scenes/real_game_music.tscn" id="1_hcsdi"]
 [ext_resource type="Texture2D" uid="uid://br8jxcg12xafd" path="res://Assets/Background/Brown.png" id="1_xu6px"]
 [ext_resource type="Texture2D" uid="uid://bn6baq1n12vvu" path="res://Assets/flag-orpheus-left.png" id="2_fkh3e"]
 [ext_resource type="Texture2D" uid="uid://cfkkpd1f7rb5w" path="res://Assets/orpheus-skateboarding-PCB.png" id="3_xbqhk"]
@@ -8,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://2tnsr31gd7c3" path="res://Assets/Group 2.png" id="6_6xnn2"]
 
 [node name="Menu" type="Node2D"]
+
+[node name="RealGameMusic" parent="." instance=ExtResource("1_hcsdi")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 15

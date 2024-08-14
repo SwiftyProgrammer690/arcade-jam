@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://c6se6sumwsxt8"]
+[gd_scene load_steps=12 format=3 uid="uid://c6se6sumwsxt8"]
 
 [ext_resource type="Texture2D" uid="uid://br8jxcg12xafd" path="res://Assets/Background/Brown.png" id="1_rlmge"]
 [ext_resource type="Texture2D" uid="uid://c8iga6pa2tywm" path="res://Assets/Terrain (16x16).png" id="2_5cnxy"]
 [ext_resource type="PackedScene" uid="uid://cx1n4sygt3yso" path="res://Scenes/player.tscn" id="2_8nwcd"]
 [ext_resource type="PackedScene" uid="uid://c26aww846h4un" path="res://Scenes/checkpoint.tscn" id="4_rsoie"]
 [ext_resource type="PackedScene" uid="uid://nejkhguaiw3m" path="res://Scenes/realmenu.tscn" id="5_oph34"]
+[ext_resource type="PackedScene" uid="uid://dph7et77cwq6i" path="res://Scenes/fake_game_music.tscn" id="6_b2ofh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_548y7"]
 texture = ExtResource("2_5cnxy")
@@ -702,5 +703,7 @@ shape = SubResource("WorldBoundaryShape2D_3a05w")
 [node name="checkpoint" parent="." instance=ExtResource("4_rsoie")]
 position = Vector2(1857, 1758)
 scene = ExtResource("5_oph34")
+
+[node name="FakeGameMusic" parent="." instance=ExtResource("6_b2ofh")]
 
 [connection signal="body_entered" from="WorldBorder" to="Player" method="_on_world_border_body_entered"]
