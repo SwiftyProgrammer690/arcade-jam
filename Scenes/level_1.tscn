@@ -652,6 +652,33 @@ text = "Alright fine, i just wanted to waste your time... here is the real game.
 [node name="Player" parent="." instance=ExtResource("2_8nwcd")]
 position = Vector2(664, 743)
 
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="Panel" type="Panel" parent="Player/Camera2D"]
+modulate = Color(1, 0.615686, 0.160784, 1)
+offset_left = 319.0
+offset_top = -315.0
+offset_right = 568.0
+offset_bottom = -237.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Player/Camera2D"]
+unique_name_in_owner = true
+offset_left = 333.0
+offset_top = -307.0
+offset_right = 524.0
+offset_bottom = -258.0
+theme_override_font_sizes/font_size = 20
+text = "Your Time:"
+
+[node name="Dev Label" type="Label" parent="Player/Camera2D"]
+offset_left = 334.0
+offset_top = -279.0
+offset_right = 556.0
+offset_bottom = -251.0
+theme_override_font_sizes/font_size = 20
+text = "Target Time: 7 seconds"
+
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
 scale = Vector2(3, 3)
@@ -673,7 +700,7 @@ position = Vector2(1137, 2141)
 shape = SubResource("WorldBoundaryShape2D_3a05w")
 
 [node name="checkpoint" parent="." instance=ExtResource("4_rsoie")]
-position = Vector2(1857, 1729)
+position = Vector2(1857, 1758)
 scene = ExtResource("5_oph34")
 
 [connection signal="body_entered" from="WorldBorder" to="Player" method="_on_world_border_body_entered"]

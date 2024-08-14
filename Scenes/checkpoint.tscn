@@ -82,19 +82,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bed2w"]
-size = Vector2(57, 111)
+size = Vector2(57, 90.5)
 
 [node name="checkpoint" type="Area2D"]
 script = ExtResource("1_tu0o1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(3, 3)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_ktuut")
 autoplay = "default"
 frame_progress = 0.941358
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(7, 32)
+position = Vector2(7, 21.75)
 shape = SubResource("RectangleShape2D_bed2w")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
