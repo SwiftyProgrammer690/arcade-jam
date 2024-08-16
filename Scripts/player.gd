@@ -35,6 +35,7 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, 30)
 
 	move_and_slide()
+	sprite_2d.flip_h = IS_LEFT
 
 
 func _on_world_border_body_entered(body):
