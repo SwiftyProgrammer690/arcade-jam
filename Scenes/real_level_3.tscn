@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bl55pxvv43nw8"]
+[gd_scene load_steps=15 format=3 uid="uid://bl55pxvv43nw8"]
 
 [ext_resource type="Script" path="res://Scripts/real_level_3.gd" id="1_cy7db"]
 [ext_resource type="Texture2D" uid="uid://br8jxcg12xafd" path="res://Assets/Background/Brown.png" id="2_6f0d0"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://6wpeaetrtxj" path="res://Scenes/real_level_4.tscn" id="5_q0f3h"]
 [ext_resource type="PackedScene" uid="uid://ykmvfaio0jyk" path="res://Scenes/real_game_music.tscn" id="6_w8aiy"]
 [ext_resource type="Texture2D" uid="uid://bn1lj08votkhy" path="res://Assets/Wood.png" id="7_n6w65"]
+[ext_resource type="PackedScene" uid="uid://bxcy1e1h5rr18" path="res://Scenes/fallling_spike.tscn" id="9_ad08h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_548y7"]
 texture = ExtResource("3_01m50")
@@ -732,3 +733,6 @@ texture = ExtResource("7_n6w65")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 position = Vector2(0, 20.5)
 shape = SubResource("RectangleShape2D_n1flg")
+
+[node name="FalllingSpike" parent="." instance=ExtResource("9_ad08h")]
+position = Vector2(278, 592)
