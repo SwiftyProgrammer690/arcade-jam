@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://b1s5ny75i63r8"]
 
+[ext_resource type="Script" path="res://Scripts/spike.gd" id="1_6uvlg"]
 [ext_resource type="Texture2D" uid="uid://dacmpnadjcg3b" path="res://Assets/Spike_B.png" id="1_815d5"]
-[ext_resource type="Script" path="res://Scripts/spike.gd" id="1_wcwis"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kkoqp"]
 atlas = ExtResource("1_815d5")
@@ -57,7 +57,7 @@ animations = [{
 size = Vector2(89, 26)
 
 [node name="Spike" type="Area2D"]
-script = ExtResource("1_wcwis")
+script = ExtResource("1_6uvlg")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
