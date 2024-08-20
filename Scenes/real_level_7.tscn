@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://b7vktif0wfc1h"]
+[gd_scene load_steps=13 format=3 uid="uid://b7vktif0wfc1h"]
 
 [ext_resource type="Script" path="res://Scripts/real_level_6.gd" id="1_iiq20"]
 [ext_resource type="Texture2D" uid="uid://br8jxcg12xafd" path="res://Assets/Background/Brown.png" id="2_neprc"]
 [ext_resource type="Texture2D" uid="uid://c8iga6pa2tywm" path="res://Assets/Terrain (16x16).png" id="3_32ufy"]
 [ext_resource type="PackedScene" uid="uid://c26aww846h4un" path="res://Scenes/checkpoint.tscn" id="4_q0m2w"]
+[ext_resource type="PackedScene" uid="uid://cbkedb7g6segs" path="res://Scenes/real_level_8.tscn" id="5_266u7"]
 [ext_resource type="PackedScene" uid="uid://cx1n4sygt3yso" path="res://Scenes/player.tscn" id="5_qhyqt"]
 [ext_resource type="PackedScene" uid="uid://ykmvfaio0jyk" path="res://Scenes/real_game_music.tscn" id="6_ueaew"]
 [ext_resource type="PackedScene" uid="uid://b1s5ny75i63r8" path="res://Scenes/spike.tscn" id="7_twrsq"]
@@ -667,6 +668,7 @@ text = "Look for the irregularities!!!"
 
 [node name="checkpoint" parent="." instance=ExtResource("4_q0m2w")]
 position = Vector2(-519, 1231)
+scene = ExtResource("5_266u7")
 
 [node name="Player" parent="." instance=ExtResource("5_qhyqt")]
 position = Vector2(91, 1103)
