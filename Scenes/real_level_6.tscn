@@ -733,5 +733,17 @@ position = Vector2(1238, 1564)
 [node name="Spike6" parent="." instance=ExtResource("7_88upu")]
 position = Vector2(1964, 2328)
 
+[node name="Spike9" parent="." instance=ExtResource("7_88upu")]
+position = Vector2(1964, 2328)
+
+[node name="Spike10" parent="." instance=ExtResource("7_88upu")]
+position = Vector2(1964, 2328)
+
+[node name="Spike11" parent="." instance=ExtResource("7_88upu")]
+position = Vector2(1964, 2328)
+
+[node name="Spike12" parent="." instance=ExtResource("7_88upu")]
+position = Vector2(1964, 2328)
+
 [node name="Spike7" parent="." instance=ExtResource("7_88upu")]
 position = Vector2(2061, 2328)

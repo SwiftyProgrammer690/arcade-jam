@@ -6,7 +6,7 @@ extends Node2D
 
 const red = Color(1.0,0.0,0.0,1.0)
 const green = Color(0.0, 1.0, 0.0, 1.0)
-const target_time = 18.5
+const target_time = 27
 var stopwatch = 0.0
 
 func _ready():
